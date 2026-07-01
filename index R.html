@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charlie Austine | Graphic Designer Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+}
+
+/* Navigation */
+
+nav{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:fixed;
+    background:rgba(0,0,0,.8);
+    backdrop-filter:blur(10px);
+    z-index:999;
+}
+
+.logo{
+    font-size:30px;
+    color:#00d9ff;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#00d9ff;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(135deg,#111,#1d1d1d);
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero span{
+    color:#00d9ff;
+}
+
+.hero p{
+    margin:20px auto;
+    max-width:700px;
+    font-size:18px;
+    line-height:30px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#00d9ff;
+    color:black;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* About */
+
+section{
+    padding:100px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+    color:#00d9ff;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:15px;
+}
+
+.about p{
+    line-height:30px;
+}
+
+/* Skills */
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.skill{
+    background:#1d1d1d;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.4s;
+}
+
+.skill:hover{
+    transform:translateY(-8px);
+}
+
+/* Portfolio */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.04);
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+button{
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:#00d9ff;
+    font-size:18px;
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#000;
+    margin-top:50px;
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">CHARLIE.</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>I'm <span>Charlie Austine</span></h1>
+
+<p>
+Creative Graphic Designer specializing in branding,
+social media posters, flyers, business cards,
+and visual identity design.
+</p>
+
+<a href="#portfolio" class="btn">View Portfolio</a>
+
+</div>
+
+</section>
+
+<section id="about" class="reveal">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<img src="c:\Users\charl\Pictures\pass.png">
+
+<div>
+
+<p>
+
+I'm a passionate Graphic Designer focused on creating
+modern, attractive, and memorable designs that help
+brands communicate effectively.
+
+My expertise includes Photoshop,
+Canva, branding, social media marketing,
+print design, and digital advertising.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills" class="reveal">
+
+<h2 class="title">My Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+<h3>Adobe Photoshop</h3>
+</div>
+
+<div class="skill">
+<h3>Canva</h3>
+</div>
+
+<div class="skill">
+<h3>Brand Identity</h3>
+</div>
+
+<div class="skill">
+<h3>Social Media Design</h3>
+</div>
+
+<div class="skill">
+<h3>Poster Design</h3>
+</div>
+
+<div class="skill">
+<h3>Photo Manipulation</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio" class="reveal">
+
+<h2 class="title">Recent Projects</h2>
+
+<div class="gallery">
+
+<img src="c:\Users\charl\Pictures\wambo.png">
+
+<img src="c:\Users\charl\Pictures\Worship Experience 2.png">
+
+<img src="c:\Users\charl\Pictures\Bchem.png">
+
+<img src="c:\Users\charl\Pictures\VeeJay.png">
+
+<img src="c:\Users\charl\OneDrive\Desktop\wedding.jpeg">
+
+<img src="c:\Users\charl\Pictures\Inspiration.png">
+
+</div>
+
+</section>
+
+<section id="contact" class="contact reveal">
+
+<h2 class="title">Let's Work Together</h2>
+
+<p>Email:kastonyjr@gmail.com</p>
+
+<p>Phone: +254 702346772</p>
+
+<br>
+
+<button onclick="hireMe()">Hire Me</button>
+
+</section>
+
+<footer>
+
+<p>© 2026 Charlie Austine | Graphic Designer</p>
+
+</footer>
+
+<script>
+function hireMe(){
+alert("Thank you for visiting my portfolio. Feel free to contact me!");
+}
+
+const reveals=document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll",function(){
+
+reveals.forEach(reveal=>{
+
+let top=reveal.getBoundingClientRect().top;
+let windowHeight=window.innerHeight;
+
+if(top<windowHeight-120){
+reveal.classList.add("active");
+}
+
+});
+
+});
+
+// Image click effect
+const images=document.querySelectorAll(".gallery img");
+
+images.forEach(image=>{
+
+image.addEventListener("click",function(){
+
+this.style.transform="scale(1.15)";
+
+setTimeout(()=>{
+this.style.transform="scale(1)";
+},300);
+
+});
+
+});
+</script>
+
+</body>
+</html>
